@@ -53,13 +53,13 @@ const IndexScreen: React.FC = () => {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name='HomeScreen' component={HomeScreen} />
-      <Tab.Screen name='DiscoverScreen' component={DiscoverScreen} />
-      <Tab.Screen name='NewVideoScreen' component={NewVideoScreen} />
-      <Tab.Screen name='InboxScreen' component={InboxScreen} />
-      <Tab.Screen name='ProfileScreen' component={ProfileScreen} />
+      <Tab.Screen name="HomeScreen" component={HomeScreen} />
+      <Tab.Screen name="DiscoverScreen" component={DiscoverScreen} />
+      <Tab.Screen name="NewVideoScreen" component={NewVideoScreen} />
+      <Tab.Screen name="InboxScreen" component={InboxScreen} />
+      <Tab.Screen name="ProfileScreen" component={ProfileScreen} />
     </Tab.Navigator>
   );
-}
+};
 
 export default IndexScreen;

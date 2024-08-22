@@ -1,8 +1,17 @@
-import { Dimensions, FlatList, StyleSheet, Text, View, useWindowDimensions } from 'react-native'
-import React from 'react'
-import { FakeUser, Video } from '../apis/videoApi'
+import {
+    Dimensions,
+    FlatList,
+    StyleSheet,
+    Text,
+    View,
+} from 'react-native';
+import React from 'react';
+import {
+    FakeUser,
 
-const { height, width } = Dimensions.get('screen')
+} from '../apis/videoApi';
+
+const { width } = Dimensions.get('screen');
 
 
 
@@ -15,31 +24,29 @@ interface VideoItemProps {
 
 const isEven = (index: number): boolean => {
     return index % 2 === 0;
-}
+};
 
 
 const VideoItem: React.FC<VideoItemProps> = ({
-    item,
     index,
-    flatListRef,
-    videoHeight
+    videoHeight,
 }) => {
     return (
         <View style={[styles.main_container, {
             backgroundColor: isEven(index) ? 'green' : 'red',
-            height: videoHeight
+            height: videoHeight,
         }]}>
             <Text>VideoItem: {index}</Text>
         </View>
-    )
-}
+    );
+};
 
-export default VideoItem
+export default VideoItem;
 
 const styles = StyleSheet.create({
     main_container: {
         width: width,
         justifyContent: 'center',
-        alignItems: 'center'
-    }
-})
+        alignItems: 'center',
+    },
+});

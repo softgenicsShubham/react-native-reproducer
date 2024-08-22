@@ -109,5 +109,5 @@ const getVideo = async (page: number, pageSize: number): Promise<AxiosResponse<G
 
 export {
   getVideo,
-  getUsers
+  getUsers,
 };
